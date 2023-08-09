@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random color app</title>
+    <style>
+        body {
+            font-family: poppins;
+        }
+
+
+        h1 {
+            text-align: center;
+            width: 500px;
+            margin: 70px auto;
+            text-transform: capitalize;
+        }
+
+
+
+        .flex {
+            padding: 0 400px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn {
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            padding: 10px;
+        }
+
+        .box1,
+        .box2 {
+            flex: 1 1;
+            margin: 20px auto;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: green;
+        }
+
+        .box1 {
+            border-radius: 40px 0 0 40px;
+        }
+
+        .box2 {
+            border-radius: 0 40px 40px  0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Generate a random color</h1>
+
+    <div class="btn">
+        <button>Click to generate random color</button>
+    </div>
+    <div class="flex">
+        <div class="box1">
+            This is the output color
+        </div>
+        <div class="box2">
+            This is the output color
+        </div>
+    </div>
+
+    <script src="4_randomcolor.js"></script>
+</body>
+
+</html>
